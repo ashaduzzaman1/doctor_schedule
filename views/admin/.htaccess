@@ -1,0 +1,12 @@
+# Turn Rewrite Engine On
+#Options +FollowSymLinks
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-l
+#
+#RewriteBase /DSM/views/admin/
+#RewriteRule ^(.*)$ /DSM/views/admin/$1 [L]
+#RewriteRule ^Specialist$ specialist.php [L]
+
+#RewriteRule ^Portfolios/(.*)$ /$1 [L,NC,R]

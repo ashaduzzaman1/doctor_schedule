@@ -1,0 +1,20 @@
+# Turn Rewrite Engine On
+#Options +FollowSymLinks -MultiViews
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php|images|robots\.txt)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+##RewriteCond %{REQUEST_FILENAME} !-l
+#
+##RewriteBase /DSM/views/admin/
+##RewriteCond %{REQUEST_URI} !(.*)folder
+#RewriteRule ^(.*)$ /views/admin/$1 [L]
+#RewriteRule ^views/admin/(.*)$ /$1 [L,NC,R]
+#RewriteRule . /admin/index.php [L]
+
+RewriteEngine on
+#RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+#RewriteRule (.*)$ /$1/ [R,L]
+#RewriteRule ^logins$ admin/index.php [NC,L]
+
+#RewriteRule ^News$ new/new.php [NC,L]

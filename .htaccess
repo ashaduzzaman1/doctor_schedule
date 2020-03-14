@@ -1,0 +1,6 @@
+RewriteEngine on
+#RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+#RewriteRule (.*)$ /$1/ [R,L]
+RewriteRule ^$ views/Main [NC,L]
+RewriteRule ^Admin$ views/Admin [NC,L]
+RewriteRule ^Doctor$ views/Doctor [NC,L]
